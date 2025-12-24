@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineer Portfolio - B Kuthalingam</title>
+
+<!-- SEO -->
+<meta name="description" content="Professional electrical, plumbing and solar works by B Kuthalingam">
+<meta name="keywords" content="Electrical Works, Plumbing, Solar Installation, Engineer Services">
+<meta name="author" content="B Kuthalingam">
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #0a3d62, #1e90ff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeDown 1.2s;
+}
+
+header h1 {
+    font-size: 2.8rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #1e272e;
+    padding: 12px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00cec9;
+}
+
+nav button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    animation: fadeUp 1s;
+}
+
+h2 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service {
+    flex: 1;
+    min-width: 250px;
+    background: #ecf0f1;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0a3d62;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #1e90ff;
+    transform: scale(1.03);
+}
+
+/* Floating Buttons */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.call {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #0984e3;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer {
+    background: #1e272e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+.dark section {
+    background: #1e1e1e;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width:600px){
+    header h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>B Kuthalingam</h1>
+    <p>Professional Engineer | Electrical • Plumbing • Solar Works</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#area">Area</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+    <button onclick="toggleDark()">🌙</button>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a professional engineer experienced in electrical installations,
+plumbing systems, and solar power solutions. I ensure safety, efficiency,
+and quality workmanship.
+</p>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="services">
+    <div class="service">
+        <h3 id="years">0+</h3>
+        <p>Years Experience</p>
+    </div>
+    <div class="service">
+        <h3 id="projectsCount">0+</h3>
+        <p>Projects Completed</p>
+    </div>
+    <div class="service">
+        <h3 id="clients">0+</h3>
+        <p>Happy Clients</p>
+    </div>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="services">
+    <div class="service">⚡ Electrical Works</div>
+    <div class="service">🚰 Plumbing Works</div>
+    <div class="service">☀️ Solar Installation</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li>Electrical Wiring & Safety</li>
+<li>Plumbing Installation</li>
+<li>Solar Power Setup</li>
+<li>Fault Detection</li>
+<li>Project Execution</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<p>
+✔ Residential & Commercial Electrical<br>
+✔ Solar Systems for Homes & Offices<br>
+✔ Complete Plumbing Installations
+</p>
+</section>
+
+<section id="area">
+<h2>Service Areas</h2>
+<p>
+📍 Tirunelveli &<br>
+📍 Nearby Areas
+</p>
+</section>
+
+<section id="testimonials">
+<h2>Client Testimonials</h2>
+<div class="services">
+    <div class="service">
+        ⭐⭐⭐⭐⭐<br>
+        "Excellent electrical service."
+    </div>
+    <div class="service">
+        ⭐⭐⭐⭐⭐<br>
+        "Solar installation done perfectly."
+    </div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<form onsubmit="sendMessage(event)">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send via WhatsApp</button>
+</form>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919789577567" target="_blank">💬</a>
+<a class="call" href="tel:+919789577567">📞</a>
+
+<footer>
+<p>© 2025 B Kuthalingam | Phone: 9789577567</p>
+</footer>
+
+<script>
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+
+function sendMessage(e){
+    e.preventDefault();
+    let n = name.value, em = email.value, m = message.value;
+    let url = `https://wa.me/919789577567?text=Name:${n}%0AEmail:${em}%0AMessage:${m}`;
+    window.open(url, "_blank");
+}
+
+// Counter Animation
+let y=0,p=0,c=0;
+let counter = setInterval(()=>{
+    if(y<18) years.innerText=++y+"+";
+    if(p<250) projectsCount.innerText=++p+"+";
+    if(c<120) clients.innerText=++c+"+";
+    if(y>=18 && p>=250 && c>=120) clearInterval(counter);
+},20);
+</script>
+
+</body>
+</html>
